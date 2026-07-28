@@ -58,7 +58,7 @@ h2 .dot{width:8px;height:8px;border-radius:50%;margin-right:9px;}
   .actions{display:none!important;} input[type=range]{-webkit-appearance:none;}
 }
 
-.cards{display:flex;margin-top:8px;}
+.cards{display:flex;margin-top:8px;align-items:stretch;}
 .card{flex:1 1 0;background:var(--surface);border:1px solid var(--hairline);border-radius:20px;
   padding:28px 26px;margin-right:20px;text-decoration:none;color:inherit;display:flex;flex-direction:column;
   transition:transform .1s ease,box-shadow .15s ease;}
@@ -72,6 +72,12 @@ h2 .dot{width:8px;height:8px;border-radius:50%;margin-right:9px;}
 .card .go{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;color:var(--purple);
   display:flex;align-items:center;}
 .card .go svg{width:14px;height:14px;margin-left:6px;}
+/* primary (Jolly Blurple) tile */
+.card.primary{background:var(--purple);border-color:var(--purple);flex:1.15 1 0;}
+.card.primary .cat{color:rgba(255,255,255,.75);}
+.card.primary h3{color:#fff;}
+.card.primary p{color:rgba(255,255,255,.9);}
+.card.primary .go{color:#fff;}
 .lead{font-size:16px;color:var(--fg2);font-weight:350;max-width:640px;margin-bottom:6px;}
 
 </style></head>
@@ -90,15 +96,15 @@ h2 .dot{width:8px;height:8px;border-radius:50%;margin-right:9px;}
 </svg>
     </div>
     <div class="h1">Referral Pilot Materials</div>
-    <div class="sub">A concept and a working model to explore together. Directional and low-risk, framed to validate after your transaction closes.</div>
+    <div class="sub">Two things to explore. Start with the calculator to run your own numbers, then read the concept behind it. Directional and low-risk, framed to validate after your transaction closes.</div>
   </div>
   <div class="body">
     <div class="cards">
-      <a class="card" href="roi-model.html">
-        <div class="cat"><span class="dot" style="background:var(--purple)"></span>interactive model</div>
+      <a class="card primary" href="roi-model.html">
+        <div class="cat"><span class="dot" style="background:var(--lime)"></span>start here &middot; interactive</div>
         <h3>Run Your Own Numbers</h3>
         <p>Drag any assumption and watch reward cost, savings, and net value update live. Download your scenario when you land on numbers that feel right.</p>
-        <div class="go">open the model <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="go">open the calculator <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </a>
       <a class="card" href="referral-pilot.html">
         <div class="cat"><span class="dot" style="background:var(--lime)"></span>the concept</div>
